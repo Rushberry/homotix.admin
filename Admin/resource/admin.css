@@ -1,0 +1,103 @@
+@import url(https://db.onlinewebfonts.com/c/590d26872afc308d02689176a1985e6c?family=Kare+W01+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #231f20;
+    border-radius: 50px;
+  }
+
+
+body{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+
+.title{
+  margin-top: 100px;
+}
+
+
+.homo{
+  color: #4caf50;
+  margin-top: -40px;
+  font-family: "Kare W01 Regular";
+  font-size: 170px;
+  letter-spacing: 1px;
+  margin-bottom: -15px;
+}
+
+.powered{
+    font-size: 60px;
+  }
+  
+.pathy{
+    color: #4caf50;
+}
+
+.common{
+    background: #231f20;
+    border-radius: 30px;
+    height: 120px;
+    width: 850px;
+    text-align: left;
+    display: flex;
+    color: #fff;
+    background: #231f20;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    align-items: center; 
+}
+
+svg{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.discover{
+    display: grid;
+    place-content: center;
+    min-height: fit-content;
+    place-items: start;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+.dis{
+    font-size: 137px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#message{
+    background-color: #0057cc;
+}
+
+#data{
+    background-color: #34a853;
+}
+
+#email{
+    background-color: #fbbc05;
+}
+
+#otp{
+    background-color: #f65314;
+}

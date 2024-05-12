@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="Homotix.png" type="image/png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Homotix</title>
+  <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gif-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gif {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+</head>
+<body>
+<div class="gif-container">
+    <img src="/Mobile/Homotix.gif" class="gif" alt="Homotix">
+</div>
+<script>
+    /// Redirecting to app... ///
+    setTimeout(function() {
+    window.location.href = 'https://chat.homotix.app/admin';
+    }, 1500);
+    
+    /// inva.js ///
+    function isLaptop() {
+      return window.innerWidth > 1024;
+    }
+
+    function redirectIfLaptop() {
+      if (isLaptop()) {
+        window.location.href = '404';
+      }
+    }
+    window.onload = redirectIfLaptop;
+</script>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/serviceworker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
